@@ -12,7 +12,7 @@ class DatabaseHelper {
 
   Future<Database> initDatabase() async {
     var dbPath = await getDatabasesPath();
-    String path = join(dbPath, 'cashio.db');
+    String path = join(dbPath, 'alfa_y_omega.db');
     return await openDatabase(path, version: 1, onCreate: (db, version) {
       db.execute('''CREATE TABLE usuarios (
         id_usuario INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,6 +21,7 @@ class DatabaseHelper {
         nombre TEXT NOT NULL,
         primer_apellido TEXT NOT NULL,
         segundo_apellido TEXT
+        dirccion_Varchart
       )''');
     });
   }

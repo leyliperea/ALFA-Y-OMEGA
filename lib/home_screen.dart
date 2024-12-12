@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Bienvenido, $username'),
-        backgroundColor: Color(0xFF376C5C),  // Verde que mencionaste
+        backgroundColor: Color(#ffccee), // Nuevo color verde
       ),
       body: Center(
         child: Text(
@@ -19,29 +19,28 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xFF376C5C),  // Verde que mencionaste
-        items: const <BottomNavigationBarItem>[
+        backgroundColor: Color(#ffccee), // Nuevo color verde
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.analytics),  // Icono para Reportes
-            label: 'Reportes',
+            icon: Icon(Icons.shopping_cart), // Ícono de carrito
+            label: 'Carrito',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.credit_card),  // Icono para Tarjetas
-            label: 'Tarjetas',
+            icon: Icon(Icons.category), // Ícono de categoría
+            label: 'Categoría',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),  // Icono para Inicio
+            icon: Icon(Icons.home), // Ícono de inicio
             label: 'Inicio',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),  // Icono para Perfil
+            icon: Icon(Icons.account_circle), // Ícono de perfil
             label: 'Perfil',
           ),
         ],
-        selectedItemColor: Color(0xFF376C5C), // Color de los íconos seleccionados
-        unselectedItemColor: Color(0xFF376C5C),  // Color de los íconos no seleccionados
+        selectedItemColor: Colors.white, // Color para el ítem seleccionado
+        unselectedItemColor: Colors.white54, // Color para los ítems no seleccionados
       ),
     );
   }
 }
-

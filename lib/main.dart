@@ -13,14 +13,12 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Gestor de Gastos',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginScreen(),
-    );
-  }
+ @override
+ Widget build(BuildContext context) {
+   return MaterialApp(
+     title:'ALFA Y OMEGA',
+     theme:(ThemeData(primarySwatch:(Colors.blue))),
+     home:(LoginScreen()),
+   );
+ }
 }
